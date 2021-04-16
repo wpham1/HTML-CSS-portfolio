@@ -9,7 +9,6 @@ h1, p, .navbar {
 
 /* Navigation bar */
 .navbar {
-    border: 1px solid black;
     background-color: #C0C0C0;
     overflow: hidden;
 }
@@ -37,22 +36,20 @@ h1, p, .navbar {
 .navbar .hamburger {
     display: none;
 }
+
 /* front page section */
 .title-container {
     display: flex column;
-    border: 2px solid green;
     height: 100vh;
     width: 100%;
 }
 
 .titleleft {
     text-align: left;
-    border: 1px solid black;
 }
 
 .titleright {
     text-align: right;
-    border: 1px solid black;
 }
 
 .arrow-container{
