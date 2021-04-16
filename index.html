@@ -13,16 +13,18 @@
     <!-- google icon font -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <!-- fontawesome icons -->
+    <script src="https://kit.fontawesome.com/1ab8eae6e7.js" crossorigin="anonymous"></script>
     <title>Walter Pham Portfolio</title>
 </head>
 <header>
-    <div class="title-container">
-        <nav class="navbar">
-            <ul>
-                <li>icon</li>
-                <li>hamburger-menu</li>
-            </ul>
-        </nav>
+    <nav class="navbar">
+        <ul>
+            <li>icon</li>
+            <li>hamburger-menu</li>
+        </ul>
+    </nav>
+    <section class="title-container">
             <div class="titlepage titleleft">
                 <h1>WALTER<br> PHAM.</h1>
             </div><br>
@@ -40,24 +42,26 @@
                         &#xe5db;
                     </span>
                 </div>
-    </div>
+            </section>
 </header>
 <body>
-    <div class="skills-container">
+    <section class="skills-container">
         <h1 class="skills-title">SKILLS.</h1>
         <div class="skills-grid">
-            <div class="skill-icon"></div>
-            <div class="skill-icon"></div>
-            <div class="skill-icon"></div>
-            <div class="skill-icon"></div>
-            <div class="skill-icon"></div>
-            <div class="skill-icon"></div>
+            <div class="skill-icon fab fa-html5"></div>
+            <div class="skill-icon fab fa-css3-alt"></div>
+            <div class="skill-icon fab fa-git-alt"></div>
+            <div class="skill-icon fab fa-js-square"></div>
+            <div class="skill-icon fab fa-figma"></div>
+            <div class="skill-icon fas fa-pencil-ruler"></div>
         </div>
-        <img src="images/avatar-skills.png" alt="me with a laptop" class="responsive-image laptopavi">
-    </div>
+        <div class="skill-image">
+            <img src="images/avatar-skills.png" alt="me with a laptop" class="responsive-image laptopavi">
+        </div>
+    </section>
     <div class="cards-container">
         <div class="cards projects">
-            <h1>PROJECTS</h1>
+            <img src="images/projects-collage960x540.png" alt="game game project collage" class="responsive-image image-card">
         </div>
         <div class="cards blog">
             <h1>BLOG</h1>
@@ -71,7 +75,15 @@
                 <a href="Resumeplaceholder.pdf" class="button resume" target="_blank">RESUME</a>
                 </h1>
         </div>
+        <footer>
+            <div class="social-media-icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </footer>
     </div>
 
 </body>
+
 </html>
