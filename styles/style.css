@@ -1,6 +1,11 @@
+/* font stacks */
 * {
   box-sizing: border-box;
   margin: 0;
+}
+
+html {
+  font-size: 16px;
 }
 
 h1, p, .navbar {
@@ -39,17 +44,26 @@ h1, p, .navbar {
 
 /* front page section */
 .title-container {
-  display: flex column;
+  display: grid;
+  grid-template-rows: 2fr auto 2fr 2fr;
   height: 100vh;
   width: 100%;
+  border: 1px solid black;
 }
 
 .titleleft {
   text-align: left;
+  font-weight: bold;
+  font: 40px "Roboto-bold", sans-serif;
 }
 
 .titleright {
   text-align: right;
+  font: 40px "Roboto", sans-serif;
+}
+
+.titlebody {
+  border: 1px solid black;
 }
 
 .arrow-container {
@@ -68,7 +82,11 @@ h1, p, .navbar {
   height: 600px;
   width: 100%;
   padding: 10px;
+}
+
+.skills-title {
   text-align: right;
+  font: 40px "Roboto", sans-serif;
 }
 
 .skills-grid {
@@ -91,8 +109,6 @@ h1, p, .navbar {
 
 /* skills image */
 .skill-image {
-  position: relative;
-  display: inline-block;
   border: 1px solid black;
 }
 
@@ -103,7 +119,6 @@ h1, p, .navbar {
   /* centers the block */
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10%;
 }
 
 .responsive-image.laptopavi {
@@ -111,14 +126,13 @@ h1, p, .navbar {
 }
 
 .responsive-image.bikeavi {
-  max-width: 400px;
+  max-width: 800px;
 }
 
 /* projects blog contact container */
 .cards-container {
   width: 100%;
   height: 100%;
-  border: 1px solid blue;
 }
 
 .cards, .button {
@@ -134,7 +148,7 @@ h1, p, .navbar {
 .projects, .blog {
   color: #ffff;
   height: 300px;
-  filter: grayscale(100%);
+  filter: grayscale(60%);
 }
 
 .contact, .button {
