@@ -12,11 +12,6 @@ label {
   padding: 10px;
 }
 
-input[type=submit] {
-  height: 80px;
-  font-size: 40px;
-}
-
 input[type=text], input[type=email], select, textarea {
   width: 100%;
   padding: 12px;
@@ -25,6 +20,17 @@ input[type=text], input[type=email], select, textarea {
   margin-bottom: 10px;
 }
 
+input[type=submit] {
+  height: 80px;
+  font-size: 40px;
+}
+
+input[type=submit]:hover {
+  background-color: #283c52;
+  cursor: pointer;
+}
+
+/* container settings */
 fieldset {
   border-radius: 25px;
   border-color: rgba(255, 255, 255, 0.438);
