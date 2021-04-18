@@ -1,8 +1,8 @@
 $phborder: 1px solid black;
 /* font stacks */
 $sans-serif: 'Roboto', sans-serif;
-$bold-title: 40px 'Roboto-bold', sans-serif;
-$lean-title: 40px 'Roboto', sans-serif;
+$bold-title: bold 40px 'Roboto', sans-serif;
+$lean-title: normal 40px 'Roboto', sans-serif;
 
 * {
     box-sizing: border-box;
@@ -10,7 +10,7 @@ $lean-title: 40px 'Roboto', sans-serif;
 }
 
 html{
-    font-size: 16px;
+    font-size: 20px;
 }
 
 h1, p, .navbar {
@@ -58,7 +58,6 @@ h1, p, .navbar {
 
 .titleleft {
     text-align: left;
-    font-weight: bold;
     font: $bold-title;
 }
 
@@ -67,8 +66,7 @@ h1, p, .navbar {
     font: $lean-title;
 }
 .titlebody{
-    border: $phborder;
-}
+    padding: 10px; }
 
 .arrow-container{
     position: absolute;
@@ -90,14 +88,20 @@ h1, p, .navbar {
 .skills-title{
     text-align: right;
     font: $lean-title;
-
-}
-.skills-grid{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
+.skill-grid{
+    padding: 0px;
+    border: $phborder
+}
+.skill-grid > ul{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    padding-inline-start: 0px;
+}
 .skill-icon{
     margin: 5px;
     padding: 12px;
