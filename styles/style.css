@@ -1,3 +1,37 @@
+/* import partials */
+label {
+  font-weight: bold;
+}
+
+.form-container {
+  margin-top: 40px;
+}
+
+.contact-title {
+  text-align: center;
+  padding: 10px;
+}
+
+input[type=submit] {
+  height: 80px;
+  font-size: 40px;
+}
+
+input[type=text], input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  border-radius: 25px;
+  border-color: rgba(255, 255, 255, 0.438);
+  box-shadow: 0px 4px 4px 0px rgba(169, 214, 255, 0.25);
+  padding: 10px;
+}
+
 /* font stacks */
 * {
   box-sizing: border-box;
@@ -8,8 +42,12 @@ html {
   font-size: 20px;
 }
 
-h1, p, .navbar {
+h1, h2, p, .navbar, .contact-form, textarea {
   font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  font: normal 40px "Roboto", sans-serif;
 }
 
 /* Navigation bar */
@@ -149,7 +187,7 @@ h1, p, .navbar {
   height: 100%;
 }
 
-.button {
+.button, input[type=submit] {
   display: flex;
   width: 100%;
   background: #658fbe;
@@ -201,7 +239,7 @@ h1, p, .navbar {
 }
 
 /* resume button */
-.resume-button .button {
+.resume-button .button, input[type=submit] {
   border-radius: 57px;
   text-decoration: none;
   color: #ffff;

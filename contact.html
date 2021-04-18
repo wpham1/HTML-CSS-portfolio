@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- instructs page to match screens width -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- style sheet references -->
+        <link href="/styles/style.css" type="text/css" rel="stylesheet"></link>
+        <!-- font families -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <!-- google icon font -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+        <!-- fontawesome icons -->
+        <script src="https://kit.fontawesome.com/1ab8eae6e7.js" crossorigin="anonymous"></script>
+        <title>Contact Me!!</title>
+    </head>
+<header>
+<!-- navigation bar -->
+    <nav class="navbar" id="myNavbar">
+        <a href="index.html" class="active"><i class="fas fa-home"></i></a>
+        <a href="projects.html"><i class="far fa-folder"></i> PROJECTS</a>
+        <a href="blog.html"><i class="fas fa-book-open"></i> BLOG</a>
+        <a href="contact.html"><i class="far fa-envelope"></i> CONTACT</a>
+        <a href="javascript:void(0);" class="hamburger" onclick="hamburgerMenu()">
+            <!-- hamburger icon -->
+            <i class="fas fa-bars"></i>
+        </a>
+    </nav>
+<!-- title page -->
+<main class="form-container">
+    <div class="contact-title">
+        <h1>CONTACT.</h1>
+        <h2>Chuck me an e-mail</h2>
+    </div>
+    <form class="contact-form" action="https://formspree.io/f/mnqlnvqz" method=POST>
+        <fieldset>
+            <label for="full-name">Full Name</label><br>
+            <input type="text" name="name" id="full-name" placeholder="First and Last" required=""><br>
+            <label for="e-mail">e-mail</label><br>
+            <input type="email" id="email-address" placeholder="youremail@mailservice.com" required=""><br>
+            <label for="message">Message</label><br>
+            <textarea name="message" id="message" placeholder="I thought today we would do a happy little picture. Take your time. Speed will come later. It looks so good, I might as well not stop. If what you're doing doesn't make you happy - you're doing the wrong thing. This is an example of what you can do with just a few things, a little imagination and a happy dream in your heart. Just make little strokes like that." required=""></textarea><br>
+            <input type="submit" value="SEND">
+        </fieldset>
+    </form>
+    </div>
+</main>
+
+</header>
+<body>
+    
+</body>
+
+<!-- Social Media icons -->
+<footer>
+    <div class="social-media-icons">
+        <a href="https://github.com/wpham1" class="fab fa-github"></a>
+        <a href="https://www.linkedin.com/in/walterpham/"  class="fab fa-linkedin-in"></a>
+        <a href="https://twitter.com/WalterPham5"  class="fab fa-twitter"></a>
+    </div>
+</footer>
+<!-- JavaScript -->
+<script>
+    function hamburgerMenu(){
+        var x = document.getElementById("myNavbar");
+        if (x.className === "navbar") {
+            x.className += " responsive";
+        } else{
+            x.className = "navbar";
+        }
+    }
+</script>
+</html>

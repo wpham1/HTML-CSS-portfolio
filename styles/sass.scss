@@ -1,4 +1,5 @@
-
+/* import partials */
+@import "./_contact.scss";
 
 $phborder: 1px solid black;
 /* font stacks */
@@ -19,10 +20,13 @@ html{
     font-size: 20px;
 }
 
-h1, p, .navbar {
+h1, h2, p, .navbar, .contact-form, textarea {
     font-family: $sans-serif;
 }
 
+h2{
+    font: $lean-title;
+}
 /* Navigation bar */
 .navbar {
     background-color: $maincolor;
@@ -70,6 +74,7 @@ h1, p, .navbar {
     text-align: right;
     font: $lean-title;
 }
+
 .titlebody{
     padding: 10px; }
 
@@ -152,7 +157,7 @@ h1, p, .navbar {
     height: 100%;
 }
 
-.button{
+.button, input[type=submit]{
     display: flex;
     width: 100%;
     background: $maincolor;
@@ -207,7 +212,7 @@ h1, p, .navbar {
 
 
 /* resume button */
-.resume-button .button{
+.resume-button .button, input[type=submit]{
     border-radius: 57px;
     text-decoration: none;
     color: #ffff;
