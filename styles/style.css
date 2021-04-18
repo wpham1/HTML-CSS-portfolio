@@ -120,8 +120,9 @@ h1, p, .navbar {
   width: 100px;
   height: 100px;
   border-radius: 20px;
-  background-color: #C0C0C0;
-  filter: invert(100%);
+  background-color: #658fbe;
+  color: #ffff;
+  box-shadow: 0px 4px 4px 0px rgba(169, 214, 255, 0.25);
 }
 
 /* skills image */
@@ -226,12 +227,17 @@ h1, p, .navbar {
   text-decoration: none;
   margin: 5px 5px;
   background: #ffff;
+  color: #658fbe;
   border-radius: 15px;
   box-shadow: 0px 4px 4px 0px rgba(169, 214, 255, 0.25);
 }
 
 .social-media-icons .fab:hover {
   opacity: 0.7;
+}
+
+.social-media-icons .fab:visited {
+  color: #88bfff;
 }
 
 /* media queries on bottom as it loads last */
