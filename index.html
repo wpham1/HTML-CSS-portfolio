@@ -18,16 +18,18 @@
     <title>Walter Pham Portfolio</title>
 </head>
 <header>
+<!-- navigation bar -->
     <nav class="navbar" id="myNavbar">
         <a href="#home" class="active"><i class="fas fa-home"></i></a>
         <a href="#projects"><i class="far fa-folder"></i> PROJECTS</a>
         <a href="Blog"><i class="fas fa-book-open"></i> BLOG</a>
         <a href="CONTACT"><i class="far fa-envelope"></i> CONTACT</a>
         <a href="javascript:void(0);" class="hamburger" onclick="hamburgerMenu()">
+            <!-- hamburger icon -->
             <i class="fas fa-bars"></i>
         </a>
-
     </nav>
+<!-- title page -->
     <section class="title-container">
             <div class="titlepage titleleft">
                 <h1>WALTER<br> PHAM.</h1>
@@ -51,6 +53,7 @@
     </section>
 </header>
 <body>
+<!-- skills page -->
     <main class="skills-container">
         <h1 class="skills-title">SKILLS.</h1>
         <section class="skill-grid">
@@ -82,22 +85,30 @@
             <img src="images/avatar-skills.png" alt="me with a laptop" class="responsive-image laptopavi">
         </div>
     </main>
+<!-- Projects|Blog|Contact cards and Resume button -->    
     <div class="cards-container">
-        <div class="cards projects">
-            <h1>PROJECTS</h1>
+        <div class="cards-button">
+            <h1>
+                <a href="projects.html" class="button projects" target="_self">PROJECTS</a>
+            </h1>
         </div>
-        <div class="cards blog">
-            <h1>BLOG</h1>
+        <div class="cards-button">
+            <h1>
+                <a href="blog.html" class="button blog" target="_self">BLOG</a>
+            </h1>
         </div>
-        <div class="cards contact">
-            <h1> CONTACT</h1>
+        <div class="cards-button">
+            <h1> 
+                <a href="contact.html" class="button contact" target="_self">CONTACT</a>
+            </h1>
         </div>
         <div class="resume-button">
+                            <!-- opens resume in new tab -->
             <h1>
-                <!-- opens resume in new tab -->
                 <a href="Resumeplaceholder.pdf" class="button resume" target="_blank">RESUME</a>
                 </h1>
         </div>
+<!-- Social Media icons -->
         <footer>
             <div class="social-media-icons">
                 <a href="https://github.com/wpham1" class="fab fa-github"></a>
@@ -107,8 +118,7 @@
             <img src="images/avatar-footer.png" alt="me happy on a bike" class="responsive-image bikeavi">
         </footer>
     </div>
-
-
+<!-- JavaScript -->
 <script>
     function hamburgerMenu(){
         var x = document.getElementById("myNavbar");
