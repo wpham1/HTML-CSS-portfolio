@@ -35,7 +35,7 @@ input[type=submit]{
 }
 
 input[type=submit]:hover{
-    background-color: #283c52;
+    filter: opacity(60%);
     cursor: pointer;
 }
 

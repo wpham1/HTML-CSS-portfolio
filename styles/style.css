@@ -27,7 +27,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #283c52;
+  filter: opacity(60%);
   cursor: pointer;
 }
 
@@ -40,104 +40,149 @@ fieldset {
 }
 
 /* font stacks */
+/* margin around Projects heading */
 .project-title {
   margin: 30px;
 }
 
+/* margin around Projects container */
 .project-container {
   margin: 20px;
 }
 
+/* setting responsive video size and margin|border */
 .project-container > img, .project-container > video {
   width: 100%;
   margin-bottom: 10px;
   border-radius: 20px;
 }
 
+/* setting h2 margins in p element */
 .project-container > p, .project-container > h2 {
   margin: 10px;
 }
 
+/* aligning h2 titles to center */
 .project-container > h2 {
   text-align: center;
 }
 
+/* changing colour of h2 title hyperlinks when visited */
 .project-container > h2 > a:visited {
   color: #88bfff;
 }
 
+/* setting position of icons to right by 20px */
 .cards-button > h1 > a > i {
   margin-right: 20px;
 }
 
+/* media query for xs devices || phones, 600px and down */
 @media screen and (max-width: 600px) {
+  /* setting font size for paragraph */
   .project-container > p {
     font-size: 20px;
   }
 }
-@media screen and (min-width: 601px) {
+/* media query for small devices || portrait tablets, 600px and up*/
+@media screen and (min-width: 600px) {
+  /* displays items inside container as inline-block */
   .project-container {
     display: inline-block;
   }
 
+  /* setting font size for paragraph*/
   .project-container > p {
     font-size: 30px;
   }
 
+  /* setting font size and aligning h2 hyperlinks in the container*/
   .project-container > h2, .project-container > a {
     font-size: 3em;
     text-align: left;
   }
 
+  /* setting max-width of video and positioning to left */
   .project-container > img, .project-container > video {
     max-width: 900px;
     float: left;
   }
 
+  /* setting projects heading size and alignment */
   .project-title {
     font-size: 4em;
     text-align: center;
   }
 }
+/* media query for medium devices|| landscape tablets 768 px and up */
 @media screen and (min-width: 769px) {
+  /* displays container as inline-block */
   .project-container {
     display: inline-block;
   }
 
+  /* sets paragraph front to 20px */
   .project-container > p {
-    font-size: 1em;
+    font-size: 20px;
   }
 
+  /* sets hyperlink headline to 2em font size and aligns to the left */
   .project-container > h2, .project-container > a {
     font-size: 2em;
     text-align: left;
   }
 
+  /* maintains 50% width for video content to the left with 30px margin */
   .project-container > video {
     max-width: 50%;
     float: left;
     margin: 30px;
   }
 
+  /* sets title font to 4em and aligns to center */
   .project-title {
     font-size: 4em;
     text-align: center;
   }
 }
+/* media query for screen widths above 2200 and up||this is a buffer */
+@media screen and (min-width: 2200px) {
+  /* sets container width to screen width and displays as block */
+  .project-container {
+    max-width: 100%;
+    display: block;
+  }
+
+  /* sets paragraph container to grid and font to 35px size, bottom gap 80px */
+  .project-container > p {
+    display: grid;
+    font-size: 35px;
+    margin-bottom: 80px;
+  }
+
+  /* sets video to 50% width */
+  .project-container > video {
+    max-width: 50%;
+  }
+}
 /* font stacks */
+/* sets true sizing for margins and padding */
 * {
   box-sizing: border-box;
   margin: 0;
 }
 
+/* set all font to 20px */
 html {
   font-size: 20px;
 }
 
+/* set font to Roboto */
 h1, h2, p, .navbar, .contact-form, textarea {
   font-family: "Roboto", sans-serif;
 }
 
+/* sets heading 2 as leaner Roboto with 40px size*/
 h2 {
   font: normal 40px "Roboto", sans-serif;
 }
@@ -148,6 +193,7 @@ h2 {
   overflow: hidden;
 }
 
+/* navbar hyperlinks positioned to left */
 .navbar a {
   float: left;
   display: block;
@@ -155,24 +201,29 @@ h2 {
   text-align: center;
   padding: 20px;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 20px;
+  transition: background-color 0.1s ease-in-out;
 }
 
+/* navbar hyperlink change color on hover */
 .navbar a:hover {
-  background-color: #658fbe;
+  background-color: #283c66;
   color: #ffff;
 }
 
+/* navbar hyperlink color change when visited before */
 .navbar a.active {
   background-color: #88bfff;
   color: #ffff;
 }
 
+/* hides hamburger menu */
 .navbar .hamburger {
   display: none;
 }
 
 /* front page section */
+/* sets up title page container as grid */
 .title-container {
   display: grid;
   grid-template-rows: 2fr auto 2fr 2fr;
@@ -180,26 +231,32 @@ h2 {
   width: 100%;
 }
 
+/* sets margin to 30px */
 .titleleft, .titleright, .cards-button, .resume-button, .contact-form {
   margin: 30px;
 }
 
+/* sets left side name title font */
 .titleleft {
   text-align: left;
   font: bold 40px "Roboto", sans-serif;
+  margin-left: 10%;
 }
 
+/* sets right side title font */
 .titleright {
   text-align: right;
   font: normal 40px "Roboto", sans-serif;
+  margin-right: 10%;
 }
 
+/* sets title body paragraph margins */
 .titlebody {
   padding: 10px;
   margin: 10px 10px;
 }
 
-/* arrow and blink animation */
+/* arrow container position and blink animation */
 .arrow-container {
   position: absolute;
   justify-content: center;
@@ -219,6 +276,7 @@ h2 {
   }
 }
 /* skills section */
+/* sets skill container as block */
 .skills-container {
   display: block;
   height: 600px;
@@ -226,6 +284,7 @@ h2 {
   padding: 10px;
 }
 
+/* sets up skills title font */
 .skills-title {
   text-align: right;
   font: normal 40px "Roboto", sans-serif;
@@ -239,6 +298,7 @@ h2 {
   margin-bottom: 20px;
 }
 
+/* sets grid style no bullet point and content alignment */
 .skill-grid > ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -248,6 +308,7 @@ h2 {
   padding-inline-start: 0px;
 }
 
+/* skill icon properties */
 .skill-icon {
   margin: 5px;
   padding: 12px;
@@ -259,6 +320,11 @@ h2 {
   background-color: #658fbe;
   color: #ffff;
   box-shadow: 0px 4px 4px 0px rgba(169, 214, 255, 0.25);
+  transition: transform 0.2s ease-in-out;
+}
+
+.skill-icon:hover {
+  transform: scale(1.1);
 }
 
 /* skills image */
@@ -271,10 +337,12 @@ h2 {
   margin-right: auto;
 }
 
+/* sets laptop avatar width */
 .responsive-image.laptopavi {
   max-width: 379px;
 }
 
+/* sets bike footer avar width */
 .responsive-image.bikeavi {
   max-width: 800px;
 }
@@ -285,6 +353,7 @@ h2 {
   height: 100%;
 }
 
+/* sets up button style */
 .button, input[type=submit] {
   display: flex;
   width: 100%;
@@ -296,29 +365,32 @@ h2 {
   box-shadow: 0px 4px 4px 0px rgba(169, 214, 255, 0.25);
 }
 
-.projects, .blog {
+/* project and blog card text color height  */
+.projects, .blog, .contact {
   color: #ffff;
   height: 300px;
-  filter: grayscale(60%);
+  filter: grayscale(0%);
 }
 
-.contact, .resume {
+/* resume button */
+.resume {
   height: 100px;
 }
 
-.cards-button .projects {
+#project {
   background: url("/images/sacwool2.png") no-repeat center;
   background-size: cover;
 }
 
-.blog {
-  background: url("/images/deathsgrasp1.jpg") no-repeat center;
+#blog {
+  background: url("/images/games-source/RIGHT_TO_RULE/3.jpg") no-repeat center;
   background-size: cover;
 }
 
-.cards .button {
-  background: url("/images/sacwool2.png") no-repeat center;
+#contact {
+  background: url("/images/games-source/1BOX_1BUTTON/4.jpg") no-repeat center;
   background-size: cover;
+  filter: brightness(100%);
 }
 
 /* card effects */
@@ -329,11 +401,15 @@ h2 {
 
 .cards-button > h1 > a:visited {
   text-decoration: none;
-  color: #88bfff;
+  color: #ffff;
 }
 
-.cards-button:hover {
-  filter: invert(100%);
+.cards-button, .resume-button {
+  transition: filter 0.2s ease-in-out;
+}
+
+.cards-button:hover, .resume-button:hover {
+  filter: opacity(60%);
 }
 
 /* resume button */
@@ -377,6 +453,47 @@ h2 {
 }
 
 /* media queries on bottom as it loads last */
+@media screen and (max-width: 375px) {
+  .titleleft > h1 {
+    font-size: 40px;
+  }
+
+  .titleright > h1 {
+    font-size: 40px;
+  }
+
+  .titlebody > p {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 375) {
+  .titleleft > h1, .titleright > h1 {
+    font-size: 1px;
+    color: red;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 599px) {
+  .titleleft > h1, .titleright > h1 {
+    font-size: 50px;
+  }
+
+  .titlebody > p {
+    font-size: 20px;
+  }
+
+  #blog {
+    background-position-y: 0px;
+  }
+
+  .skill-grid > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    padding-inline-start: 0px;
+  }
+}
 @media screen and (max-width: 600px) {
   .navbar a:not(:first-child) {
     display: none;
@@ -402,6 +519,103 @@ h2 {
     float: none;
     display: block;
     text-align: left;
+  }
+}
+@media screen and (max-width: 600px) {
+  .title-container {
+    display: grid;
+    grid-template-areas: "titleleft" "titleright" "titlebody";
+    grid-template-columns: 1fr;
+  }
+
+  .titleleft {
+    grid-area: titleleft;
+  }
+
+  .titleright {
+    grid-area: titleright;
+  }
+
+  .titlebody {
+    grid-area: titlebody;
+  }
+
+  .titleleft, .titleright {
+    font-size: 40px;
+  }
+
+  .titlebody {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .titleleft, .titleright {
+    font-size: 40px;
+  }
+
+  .titlebody {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  #arrow {
+    font-size: 50px;
+  }
+
+  #blog {
+    background-position-y: -60px;
+  }
+
+  .skill-grid > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    padding-inline-start: 0px;
+  }
+
+  .skill-icon {
+    width: 100px;
+    height: 100px;
+    font-size: 80px;
+  }
+
+  .skill-grid > ul > li > p {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .titleright > h1, .titleleft > h1 {
+    font-size: 45px;
+  }
+
+  .titlebody > p {
+    font-size: 18px;
+  }
+
+  #arrow {
+    font-size: 30px;
+  }
+
+  .skill-grid > ul {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .skill-icon {
+    width: 150px;
+    height: 150px;
+    font-size: 120px;
+  }
+}
+@media screen and (min-width: 1281px) {
+  .titleleft, .titleright {
+    font-size: 40px;
+  }
+
+  .titlebody {
+    font-size: 40px;
+    text-align: center;
   }
 }
 

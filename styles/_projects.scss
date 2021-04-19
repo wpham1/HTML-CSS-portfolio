@@ -9,84 +9,114 @@ $b-shadow: 0px 4px 4px 0px rgba(169, 214, 255, 0.25);
 $margin: 30px;
 
 
-
+/* margin around Projects heading */
 .project-title {
     margin: $margin;
 }
-
+/* margin around Projects container */
 .project-container{
     margin: 20px;
 }
+/* setting responsive video size and margin|border */
 .project-container > img, .project-container > video {
     width: 100%;
     margin-bottom: 10px;
     border-radius: 20px;
 }
-
+/* setting h2 margins in p element */
 .project-container > p, .project-container > h2 {
     margin: 10px;
 }
-
+/* aligning h2 titles to center */
 .project-container > h2 {
     text-align: center;
 }
-
+/* changing colour of h2 title hyperlinks when visited */
 .project-container > h2 > a:visited{
     color:$visited;
 }
-
+/* setting position of icons to right by 20px */
 .cards-button > h1 > a > i {
     margin-right: 20px;
 }
 
+/* media query for xs devices || phones, 600px and down */
 @media screen and (max-width: 600px){
-
+    /* setting font size for paragraph */
     .project-container > p {
         font-size: 20px;
     }    
 }
 
-@media screen and (min-width: 601px){
-        .project-container{
+/* media query for small devices || portrait tablets, 600px and up*/
+@media screen and (min-width: 600px){
+        /* displays items inside container as inline-block */
+    .project-container{
             display: inline-block;
         }
+        /* setting font size for paragraph*/
         .project-container > p {
             font-size: 30px;
         }
+        /* setting font size and aligning h2 hyperlinks in the container*/
         .project-container > h2, .project-container > a{
             font-size: 3em;
             text-align: left;
         }
+        /* setting max-width of video and positioning to left */
         .project-container > img, .project-container > video {
             max-width: 900px;
             float: left;
         }
+        /* setting projects heading size and alignment */
         .project-title{
             font-size: 4em;
             text-align: center;
         }
     }
+/* media query for medium devices|| landscape tablets 768 px and up */
+ @media screen and (min-width: 769px){ 
+        /* displays container as inline-block */
+        .project-container{
+            display: inline-block;
+        }
+        /* sets paragraph front to 20px */
+        .project-container > p {
+            font-size: 20px;
+        }
+        /* sets hyperlink headline to 2em font size and aligns to the left */
+        .project-container > h2, .project-container > a{
+            font-size: 2em;
+            text-align: left;
+        }
+        /* maintains 50% width for video content to the left with 30px margin */
+        .project-container > video {
+            max-width: 50%;
+            float: left;
+            margin: 30px;
+        }
+        /* sets title font to 4em and aligns to center */
+        .project-title{
+            font-size: 4em;
+            text-align: center;
+        }
+    }
+/* media query for screen widths above 2200 and up||this is a buffer */
+    @media screen and (min-width: 2200px){
+        /* sets container width to screen width and displays as block */
+        .project-container {
+            max-width: 100%;
+            display: block;
+        }
+        /* sets paragraph container to grid and font to 35px size, bottom gap 80px */
+        .project-container > p {
+            display: grid;
+            font-size: 35px;
+            margin-bottom: 80px;
 
-@media screen and (min-width: 769px) { 
-    .project-container{
-        display: inline-block;
+        }
+        /* sets video to 50% width */
+        .project-container > video {
+            max-width: 50%;
+        }
     }
-    .project-container > p {
-        font-size: 1em;
-    }
-    .project-container > h2, .project-container > a{
-        font-size: 2em;
-        text-align: left;
-    }
-    .project-container > video {
-        max-width: 50%;
-        float: left;
-        margin: 30px;
-    }
-    .project-title{
-        font-size: 4em;
-        text-align: center;
-    }
-}
-
-
