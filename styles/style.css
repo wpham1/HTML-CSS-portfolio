@@ -40,15 +40,6 @@ fieldset {
 }
 
 /* font stacks */
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-html.project-page {
-  font-size: 20px;
-}
-
 .project-title {
   margin: 30px;
 }
@@ -79,27 +70,56 @@ html.project-page {
   margin-right: 20px;
 }
 
-.cards-button {
-  padding: 20px;
+@media screen and (max-width: 600px) {
+  .project-container > p {
+    font-size: 20px;
+  }
 }
-
-@media screen and (min-width: 600px) {
-  html.project-page .project-container {
+@media screen and (min-width: 601px) {
+  .project-container {
     display: inline-block;
   }
-  html.project-page .project-container > p {
-    font-size: 1.3em;
+
+  .project-container > p {
+    font-size: 30px;
   }
-  html.project-page .project-container > h2, html.project-page .project-container > a {
+
+  .project-container > h2, .project-container > a {
     font-size: 3em;
     text-align: left;
   }
-  html.project-page .project-container > img, html.project-page .project-container > video {
+
+  .project-container > img, .project-container > video {
     max-width: 900px;
+    float: left;
+  }
+
+  .project-title {
+    font-size: 4em;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 769px) {
+  .project-container {
+    display: inline-block;
+  }
+
+  .project-container > p {
+    font-size: 1em;
+  }
+
+  .project-container > h2, .project-container > a {
+    font-size: 2em;
+    text-align: left;
+  }
+
+  .project-container > video {
+    max-width: 50%;
     float: left;
     margin: 30px;
   }
-  html.project-page h1 {
+
+  .project-title {
     font-size: 4em;
     text-align: center;
   }
