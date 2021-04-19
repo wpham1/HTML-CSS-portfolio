@@ -3,9 +3,11 @@ $phborder: 1px solid black;
 $sans-serif: 'Roboto', sans-serif;
 $bold-title: bold 40px 'Roboto', sans-serif;
 $lean-title: normal 40px 'Roboto', sans-serif;
-$maincolor:#658fbe;
-$visited: #88bfff;
-$b-shadow: 0px 4px 4px 0px rgba(169, 214, 255, 0.25);
+$maincolor:#3C4A6D;
+$visited: #C7ECFF;
+$hovercol:#283c66;
+$b-shadow: 0px 4px 4px 0px rgba(1, 109, 209, 0.25);
+$margin: 30px;
 
 label{
     font-weight: bold;
@@ -13,6 +15,10 @@ label{
 
 .form-container{
     margin-top: 40px;
+    display: flex wrap;
+    width: 100%;
+    align-items: stretch;
+    flex: column;
 }
 
 
@@ -28,7 +34,9 @@ input[type=text], input[type=email], select, textarea {
     resize: vertical;
     margin-bottom: 10px;
   }
-
+#message {
+    height:200px;
+}
 input[type=submit]{
     height: 80px;
     font-size: 40px;
@@ -45,4 +53,13 @@ input[type=submit]:hover{
       border-color: rgba(255, 255, 255, 0.438);
       box-shadow: 0px 4px 4px 0px rgba(169, 214, 255, 0.25);
       padding: 10px;
+  }
+
+  @media screen and (min-width: 768px){
+      .form-container{
+          height: 70vh;
+      }
+      #message {
+          height:400px;
+      }
   }
