@@ -1,0 +1,25 @@
+$phborder: 1px solid black;
+/* font stacks */
+$sans-serif: 'Roboto', sans-serif;
+$bold-title: bold 40px 'Roboto', sans-serif;
+$lean-title: normal 40px 'Roboto', sans-serif;
+$maincolor:#658fbe;
+$visited: #88bfff;
+$b-shadow: 0px 4px 4px 0px rgba(169, 214, 255, 0.25);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+html{
+    font-size: 20px;
+}
+
+
+.project-container{
+    margin: 20px;
+}
+.project-container > img {
+    width: 100%;
+    margin-bottom: 10px;
+}

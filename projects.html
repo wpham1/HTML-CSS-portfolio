@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- instructs page to match screens width -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- style sheet references -->
+        <link href="/styles/style.css" type="text/css" rel="stylesheet"></link>
+        <!-- font families -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <!-- google icon font -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+        <!-- fontawesome icons -->
+        <script src="https://kit.fontawesome.com/1ab8eae6e7.js" crossorigin="anonymous"></script>
+        <title>Projects</title>
+    </head>
+<header>
+<!-- navigation bar -->
+<nav class="navbar" id="myNavbar">
+    <a href="index.html" class="active"><i class="fas fa-home"></i></a>
+    <a href="projects.html"><i class="far fa-folder"></i> PROJECTS</a>
+    <a href="blog.html"><i class="fas fa-book-open"></i> BLOG</a>
+    <a href="contact.html"><i class="far fa-envelope"></i> CONTACT</a>
+    <a href="javascript:void(0);" class="hamburger" onclick="hamburgerMenu()">
+        <!-- hamburger icon -->
+        <i class="fas fa-bars"></i>
+    </a>
+</nav> 
+<h1>PROJECTS.</h1>
+</header>
+<body>
+    <div class="project-container">
+        <img src="images/games-source/RIGHT_TO_RULE/5.jpg" alt="Two characters fighting and playing cards being used in the Right To Rule game">
+        <h2><a href="https://ouroborosgames.itch.io/right-to-rule" target="_blank"><i class="fas fa-external-link-alt"></i>RIGHT TO RULE</a></h2>
+        <p>Right To Rule is an online multiplayer tactical card game that has players defend their base from ruin. Utilise spell cards to strengthen your units and take over watch-towers to attack from above. Destroy the enemy base to win.
+        <br>
+        Roles: Art direction, 3D modelling, animation, UI design, Concept art</p>
+
+    </div>
+</body>
+
+
+
+
+
+<!-- Social Media icons -->
+<footer>
+    <div class="social-media-icons">
+        <a href="https://github.com/wpham1" class="fab fa-github"></a>
+        <a href="https://www.linkedin.com/in/walterpham/"  class="fab fa-linkedin-in"></a>
+        <a href="https://twitter.com/WalterPham5"  class="fab fa-twitter"></a>
+    </div>
+</footer>
+</div>
+<!-- JavaScript -->
+<script>
+function hamburgerMenu(){
+var x = document.getElementById("myNavbar");
+if (x.className === "navbar") {
+    x.className += " responsive";
+} else{
+    x.className = "navbar";
+}
+}
+</script>
+</html>
