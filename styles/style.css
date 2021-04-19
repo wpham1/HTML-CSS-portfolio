@@ -56,8 +56,37 @@ html {
 .project-container > img {
   width: 100%;
   margin-bottom: 10px;
+  border-radius: 20px;
 }
 
+.project-container > p, .project-container > h2 {
+  margin: 10px;
+}
+
+.project-container > h2 {
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .project-container {
+    display: inline-block;
+  }
+
+  .project-container > p {
+    font-size: 1.3em;
+  }
+
+  .project-container > h2, .project-container > a {
+    font-size: 3em;
+    text-align: left;
+  }
+
+  .project-container > img {
+    max-width: 900px;
+    float: left;
+    margin: 30px;
+  }
+}
 /* font stacks */
 * {
   box-sizing: border-box;
