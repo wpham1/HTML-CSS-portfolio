@@ -6,3 +6,67 @@ $visited: #C7ECFF;
 $hovercol:#283c66;
 $b-shadow: 0px 4px 4px 0px rgba(1, 109, 209, 0.25);
 $margin: 30px;
+
+
+.blog-header {
+    position: relative;
+    text-align: center;
+    color: white;
+
+  }
+  .blog-image{
+    height: auto;
+    max-width: 100%;
+  }
+  .centered-text {
+    font: $bold-title;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+
+  .post-it-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .post-it-container{
+    flex: 0 1 150px;
+    margin: 20px;
+  }
+  .date-text {
+      color: $maincolor;
+      opacity: (40%);
+      font-size: 15px;
+  }
+  
+#post-content{
+      font-size: 10px;
+  }
+#post-heading{
+    font-size: 25px;
+}
+.post-img {
+    width: 200px;
+}
+.post-see{
+    font-weight: bold;
+    font-size: 10px;
+}
+
+ /*  <article class="post-it-container" id="post-it">
+  <header class="date-published">
+      <p class="date-text">12-12-12</p>
+  </header>
+  <img class="post-img" src="/images/games-source/GOLF_SLAYER/1.jpg" alt="placeholder">
+  <article class="post-content" id="post-content">
+      <p class="post-notes">
+      lorem pipsum</p>
+  </article>
+  <footer class="post-it-footer" id="post-it-footer">
+      <p>Read more</p>
+  </footer>
+</article> */

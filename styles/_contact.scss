@@ -14,7 +14,7 @@ label{
 }
 
 .form-container{
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex wrap;
     width: 100%;
     align-items: stretch;
@@ -63,3 +63,8 @@ input[type=submit]:hover{
           height:400px;
       }
   }
+  @media screen and (min-width: 1025px){
+    .project-title{
+        font-size: 35px;
+    }
+}
