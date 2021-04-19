@@ -6,19 +6,26 @@ $lean-title: normal 40px 'Roboto', sans-serif;
 $maincolor:#658fbe;
 $visited: #88bfff;
 $b-shadow: 0px 4px 4px 0px rgba(169, 214, 255, 0.25);
+$margin: 30px;
+
 
 * {
     box-sizing: border-box;
     margin: 0;
 }
-html{
+
+html.project-page{
     font-size: 20px;
+}
+
+.project-title {
+    margin: $margin;
 }
 
 .project-container{
     margin: 20px;
 }
-.project-container > img {
+.project-container > img, .project-container > video {
     width: 100%;
     margin-bottom: 10px;
     border-radius: 20px;
@@ -32,21 +39,40 @@ html{
     text-align: center;
 }
 
-@media screen and (min-width: 600px) {
-    .project-container{
-        display: inline-block;
-    }
-    .project-container > p {
-        font-size: 1.3em;
+.project-container > h2 > a:visited{
+    color:$visited;
+}
 
-    }
-    .project-container > h2, .project-container > a{
-        font-size: 3em;
-        text-align: left;
-    }
-    .project-container > img {
-        max-width: 900px;
-        float: left;
-        margin: 30px;
+.cards-button > h1 > a > i {
+    margin-right: 20px;
+}
+
+.cards-button {
+    padding: 20px;
+}
+
+@media screen and (min-width: 600px) {
+    html.project-page{ 
+        .project-container{
+            display: inline-block;
+        }
+        .project-container > p {
+            font-size: 1.3em;
+
+        }
+        .project-container > h2, .project-container > a{
+            font-size: 3em;
+            text-align: left;
+        }
+        .project-container > img, .project-container > video {
+            max-width: 900px;
+            float: left;
+            margin: 30px;
+        }
+        h1{
+            font-size: 4em;
+            text-align: center;
+        }
     }
 }
+
