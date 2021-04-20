@@ -201,6 +201,7 @@ fieldset {
   position: relative;
   text-align: center;
   color: white;
+  margin: 30px;
   max-width: 100%;
 }
 
@@ -252,21 +253,51 @@ fieldset {
   font-size: 10px;
 }
 
-/*  <article class="post-it-container" id="post-it">
-  <header class="date-published">
-      <p class="date-text">12-12-12</p>
-  </header>
-  <img class="post-img" src="/images/games-source/GOLF_SLAYER/1.jpg" alt="placeholder">
-  <article class="post-content" id="post-content">
-      <p class="post-notes">
-      lorem pipsum</p>
-  </article>
-  <footer class="post-it-footer" id="post-it-footer">
-      <p>Read more</p>
-  </footer>
-</article> */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 .article-container {
   width: 100%;
+}
+
+#blog-image {
+  height: auto;
+  width: 100%;
+}
+
+#article-img {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.article-img-container {
+  position: relative;
+}
+
+.blog-article-container {
+  margin: 30px;
+  display: flex column;
+}
+
+.blog-header, .date-published, .share-bar, .article-container {
+  margin: 20px;
+}
+
+.share-bar {
+  display: flex;
+  border: 1px solid black;
+}
+
+.shareicon {
+  margin-left: 10px;
+  margin-right: 20px;
+  font-size: 30px;
+  color: #3C4A6D;
 }
 
 /* font stacks */
