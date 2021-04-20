@@ -24,7 +24,7 @@ html{
     font-size: 20px;
 }
 /* set font to Roboto */
-h1, h2, p, .navbar, .contact-form, textarea {
+h1, h2, h3, a, p, .navbar, .contact-form, textarea {
     font-family: $sans-serif;
 }
 /* sets heading 2 as leaner Roboto with 40px size*/
@@ -206,16 +206,19 @@ h2{
 #project {
     background: url("/images/sacwool2.png") no-repeat center;
     background-size: cover;
+    background-attachment: fixed;
 } 
 
 #blog {
     background: url("/images/games-source/RIGHT_TO_RULE/3.jpg") no-repeat center;
     background-size: cover;
+    background-attachment: fixed;
  }
 
 #contact  {
     background: url("/images/games-source/1BOX_1BUTTON/4.jpg") no-repeat center;
     background-size: cover;
+    background-attachment: fixed;
     filter: brightness(100%)
 }
 
