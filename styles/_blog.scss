@@ -12,6 +12,7 @@ $margin: 30px;
     position: relative;
     text-align: center;
     color: white;
+    max-width: 100%;
 
   }
   .blog-image{
@@ -25,9 +26,6 @@ $margin: 30px;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
-
-
   .post-it-grid {
     display: flex;
     flex-wrap: wrap;
@@ -36,6 +34,7 @@ $margin: 30px;
   .post-it-container{
     flex: 0 1 150px;
     margin: 20px;
+    width: 100%;
   }
   .date-text {
       color: $maincolor;

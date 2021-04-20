@@ -201,6 +201,7 @@ fieldset {
   position: relative;
   text-align: center;
   color: white;
+  max-width: 100%;
 }
 
 .blog-image {
@@ -225,6 +226,7 @@ fieldset {
 .post-it-container {
   flex: 0 1 150px;
   margin: 20px;
+  width: 100%;
 }
 
 .date-text {
@@ -263,6 +265,10 @@ fieldset {
       <p>Read more</p>
   </footer>
 </article> */
+.article-container {
+  width: 100%;
+}
+
 /* font stacks */
 /* sets true sizing for margins and padding */
 * {
