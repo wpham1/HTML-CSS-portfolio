@@ -1,0 +1,206 @@
+commit f548ebd4530446af72b3e90e61f928bcb8eaec92
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Wed Apr 21 17:48:26 2021 +1000
+
+    blog media query check on netlify
+
+commit 902f93fe114192d8fdc87c23a2784af10bbcfa48
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Wed Apr 21 17:46:33 2021 +1000
+
+    blog media query above 1600
+
+commit 2b5040d2b31a54b8e8dcf73d8c1dd70c3e91ceb7
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Wed Apr 21 17:38:13 2021 +1000
+
+    fixed up media query
+
+commit 216e90f4d5e5ee978c27b0453fa55559f60f01a0
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Wed Apr 21 17:22:40 2021 +1000
+
+    did up ppts
+
+commit adcbd7a3434763dcfe7147e334f24fedf80a51f9
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Wed Apr 21 16:34:07 2021 +1000
+
+    fixing icon color
+
+commit 14bd3b352d0c8bc73559c0e6b7df0f211f93aa19
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Wed Apr 21 16:27:12 2021 +1000
+
+    final cleanup on all files and comments on lines
+
+commit 20486b9eee03183996990c84c3e52ef763d63a80
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Wed Apr 21 12:17:09 2021 +1000
+
+    finished blog with polish
+
+commit f245cfe8c3f44e9fba4780e760a5a32fa5918f83
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Wed Apr 21 10:58:58 2021 +1000
+
+    polishing up contact and reworking wireframe
+
+commit 89a8f2729c97b047408021cbf7c0a515fd6d2bab
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Wed Apr 21 03:03:27 2021 +1000
+
+    added functional share bar that shares to fb twitter fbm
+
+commit b33b7ccf18ce62be5024f0cc26abfb51079423d0
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Wed Apr 21 02:48:17 2021 +1000
+
+    a lot of progress on styles for blog and the articles
+
+commit b92c47bb20687458b01cdaf415e075ebbd50051f
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Tue Apr 20 14:44:09 2021 +1000
+
+    updating blog and styles
+
+commit 7579e11248bb9e6a9574820165ce997bd9a43a7c
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Tue Apr 20 10:21:03 2021 +1000
+
+    blog and blog article progress
+
+commit 213a3b6327e9c5443096400a193cc72bb6c2c3ae
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Tue Apr 20 04:07:49 2021 +1000
+
+    lot of progress on blog
+
+commit ce7315d44e07efe3003908a2eb87123fcc667dbb
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Tue Apr 20 02:21:05 2021 +1000
+
+    massive changes, changed contrast to color starting blog
+
+commit 0d8e21f15ed729def87a4d9f643134c297ac0025
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Mon Apr 19 23:23:36 2021 +1000
+
+    updated with transitions and media queries this time
+
+commit 11c6c53cdf8f0f5af03f35ffddcce6555dbfb641
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Mon Apr 19 16:38:57 2021 +1000
+
+    projects done with media queries
+
+commit 6ffdbd516bf7ec74ce41d0ab2705fd2a70a18b95
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Mon Apr 19 13:45:19 2021 +1000
+
+    satisfied with current project styles
+
+commit cba6bee4a693e4d0dc02c73ac39bcf1534c66368
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Mon Apr 19 11:21:43 2021 +1000
+
+    working on project file, got responsive layout to work with cards
+
+commit 1fffc23bb266e3617f4c1cb74e5a4e6e7c3532ca
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Mon Apr 19 10:26:33 2021 +1000
+
+    updated contacts and started projects
+
+commit 858e3c0f7e2277695a7461c57b8ca10ad40806c3
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Mon Apr 19 03:53:18 2021 +1000
+
+    updated contact submit to have pointer
+
+commit 032c19a3b7fbc3240f912d585bbdca4716e1b8d1
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Mon Apr 19 03:47:38 2021 +1000
+
+    updated contact page with everything
+
+commit 9b5c4979a4e86ce7366a4f901958eebc693ae8de
+Merge: 9397cf6 2d11557
+Author: wpham1 <81142405+wpham1@users.noreply.github.com>
+Date:   Mon Apr 19 01:31:36 2021 +1000
+
+    Merge pull request #1 from wpham1/home
+    
+    Home
+
+commit 2d115573eeb44e7c303f0ab8c879dcfd50a86810
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Mon Apr 19 01:24:07 2021 +1000
+
+    updating home styles
+
+commit 2e8f254ff8f7096b40956e1fed1e4163c5f8dd23
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Mon Apr 19 01:10:38 2021 +1000
+
+    styled homepage and added hyperlinks to cards
+
+commit 4a4ec2e9e0c8af57920f5b916cb95b75ea25a8d2
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Sun Apr 18 22:28:54 2021 +1000
+
+    updated home skills table to be responsive with text
+
+commit a62841516321ac18c1e085de0c746a1c6c939165
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Sat Apr 17 17:54:49 2021 +1000
+
+    updating home title stylings and responsiveness
+
+commit c30467ce2220b55145faebd6465eb77869d5e8cb
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Sat Apr 17 07:00:49 2021 +1000
+
+    updated home stylings
+
+commit 734d7811e23a84a0f86f4adc50eca94d1e940d2c
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Sat Apr 17 06:44:51 2021 +1000
+
+    home navbar done
+
+commit 33630deab0759ca1502208187873d18b7956e0c0
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Sat Apr 17 04:11:48 2021 +1000
+
+    styling home page
+
+commit 5ad3d3453d8d6c936d27c6d88ba4a329a71ef883
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Fri Apr 16 14:18:55 2021 +1000
+
+    working on home: contact and social media icons
+
+commit 760b79a8b1fe3a6d3004f760aca2b6cdd8aa5059
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Fri Apr 16 12:26:53 2021 +1000
+
+    working progress on home: skills and project part
+
+commit 62527791eca63bb5977db9808d443aa117e4e11b
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Fri Apr 16 10:59:15 2021 +1000
+
+    updated home css
+
+commit 9397cf68751b046e67b05b05268a208412d17094
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Thu Apr 15 22:38:14 2021 +1000
+
+    setting up the html files
+
+commit 46b75b1a73f9692294100784a49803749b84e99e
+Author: wpham1 <gcab012112@coderacademy.edu.au>
+Date:   Tue Apr 13 14:13:18 2021 +1000
+
+    first initial commitgit status
