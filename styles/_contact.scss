@@ -12,21 +12,31 @@ $margin: 30px;
 label{
     font-weight: bold;
 }
-
-.form-container{
-    margin-top: 20px;
-    display: flex wrap;
-    width: 100%;
-    align-items: stretch;
-    flex: column;
-}
-
-
 .contact-title{
     text-align: center;
     padding: 10px;
 }
+.contact-flex{
+    display: flex wrap;
 
+}
+.form-container{
+    margin-top: 20px;
+    display: flex row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.contact-details > h2 {
+    font-size: 15px;
+}
 input[type=text], input[type=email], select, textarea {
     width: 100%;
     padding: 12px;
@@ -47,7 +57,7 @@ input[type=submit]:hover{
     cursor: pointer;
 }
 
-  /* container settings */
+  /* contact form settings */
   fieldset {
       border-radius: 25px;
       border-color: rgba(255, 255, 255, 0.438);
@@ -55,16 +65,17 @@ input[type=submit]:hover{
       padding: 10px;
   }
 
-  @media screen and (min-width: 768px){
-      .form-container{
-          height: 70vh;
+/*  iPad 1, 2, Mini and Air  */
+@media only screen and (min-device-width: 768px)and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+      #message{
+          height: 150px;
       }
-      #message {
-          height:400px;
-      }
-  }
-  @media screen and (min-width: 1025px){
-    .project-title{
-        font-size: 35px;
-    }
 }
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #message{
+        height: 500px;
+    }
+  }
