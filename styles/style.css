@@ -74,6 +74,15 @@ fieldset {
     height: 500px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contact-title {
+    padding: 0px;
+  }
+
+  #message {
+    height: 80px;
+  }
+}
 /* font stacks */
 /* margin around Projects heading */
 .project-title {
@@ -210,12 +219,18 @@ fieldset {
     max-width: 50%;
   }
 }
+.header-container {
+  margin: 0px 30px;
+}
+
 .blog-header {
   position: relative;
   text-align: center;
   color: white;
-  margin: 30px;
   max-width: 100%;
+  display: block;
+  justify-content: center;
+  align-items: center;
 }
 
 .blog-image {
@@ -259,7 +274,8 @@ fieldset {
 }
 
 .post-img {
-  width: 200px;
+  width: auto;
+  height: 100px;
 }
 
 .post-see {
@@ -322,6 +338,7 @@ fieldset {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 20px 0px;
 }
 .divider .line {
   height: 1px;
@@ -337,6 +354,19 @@ fieldset {
   align-items: center;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1800px) and (-webkit-min-device-pixel-ratio: 1) {
+  .blog-article-container {
+    margin: 0px 300px;
+  }
+
+  .article-content {
+    font-size: 15px;
+  }
+
+  #article-img {
+    width: 50%;
+  }
+}
 /* font stacks */
 /* sets true sizing for margins and padding */
 * {

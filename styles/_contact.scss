@@ -79,3 +79,13 @@ input[type=submit]:hover{
         height: 500px;
     }
   }
+
+   @media screen and (min-width: 1200px){
+    .contact-title{
+        padding: 0px;
+    }
+       #message{
+          height:80px;
+      }
+    }
+ 
