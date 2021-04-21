@@ -443,12 +443,22 @@ h2{
 }
 /* screens above 1281px has font changed to fit */
 @media screen and (min-width: 1281px) {
-    .titleleft, .titleright{
+    .titleleft > h1, .titleright > h1{
         font-size: 40px;
     }
-    .titlebody{
-        font-size: 40px;
+    .titlebody > p{
+        font-size: 20px;
         text-align: center;
     }
 
+}
+
+@media screen and (min-width: 1600px){
+    .titleleft > h1, .titleright >h1{
+        font-size: 80px;
+    }
+    .titlebody > p{
+        font-size: 25px;
+        text-align: center;
+    }
 }
