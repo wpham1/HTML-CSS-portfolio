@@ -1,25 +1,32 @@
-$phborder: 1px solid black;
 /* font stacks */
 $sans-serif: 'Roboto', sans-serif;
 $bold-title: bold 40px 'Roboto', sans-serif;
 $lean-title: normal 40px 'Roboto', sans-serif;
+/* color themes */
 $maincolor:#3C4A6D;
 $visited: #C7ECFF;
 $hovercol:#283c66;
+/* box shadow property */
 $b-shadow: 0px 4px 4px 0px rgba(1, 109, 209, 0.25);
+/* most used margin */
 $margin: 30px;
 
+
+/* set labels to bold */
 label{
     font-weight: bold;
 }
+/* centers contact title */
 .contact-title{
     text-align: center;
     padding: 10px;
 }
+/* makes contact container a flex */
 .contact-flex{
     display: flex wrap;
 
 }
+/* applies margin flex and content alignment in form container */
 .form-container{
     margin-top: 20px;
     display: flex row;
@@ -27,6 +34,7 @@ label{
     align-items: center;
     justify-content: center;
 }
+/* centre contact detail info */
 .contact-details{
     display: flex;
     flex-direction: column;
@@ -34,9 +42,11 @@ label{
     align-items: center;
     width: 100%;
 }
+/* set font size to 15px */
 .contact-details > h2 {
     font-size: 15px;
 }
+/* sets font and form box sizes */
 input[type=text], input[type=email], select, textarea {
     width: 100%;
     padding: 12px;
@@ -44,14 +54,16 @@ input[type=text], input[type=email], select, textarea {
     resize: vertical;
     margin-bottom: 10px;
   }
+  /* sets message box to 200px */
 #message {
     height:200px;
 }
+/* submit button style */
 input[type=submit]{
     height: 80px;
     font-size: 40px;
 }
-
+/* submit on hover has a pointer and fades a little */
 input[type=submit]:hover{
     filter: opacity(60%);
     cursor: pointer;
@@ -71,19 +83,23 @@ input[type=submit]:hover{
           height: 150px;
       }
 }
+/* media query for ipad  */
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 2) {
+      /* message box scale */
     #message{
         height: 500px;
     }
   }
-
+/* media query for desktop and above */
    @media screen and (min-width: 1200px){
+       /* removes padding to fit more form in */
     .contact-title{
         padding: 0px;
     }
+    /* message box scale to fit */
        #message{
           height:80px;
       }

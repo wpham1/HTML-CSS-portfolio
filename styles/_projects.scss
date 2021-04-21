@@ -1,12 +1,14 @@
-$phborder: 1px solid black;
 /* font stacks */
 $sans-serif: 'Roboto', sans-serif;
 $bold-title: bold 40px 'Roboto', sans-serif;
 $lean-title: normal 40px 'Roboto', sans-serif;
+/* color themes */
 $maincolor:#3C4A6D;
 $visited: #C7ECFF;
 $hovercol:#283c66;
+/* box shadow property */
 $b-shadow: 0px 4px 4px 0px rgba(1, 109, 209, 0.25);
+/* most used margin */
 $margin: 30px;
 
 
@@ -102,8 +104,9 @@ $margin: 30px;
             text-align: center;
         }
     }
-
+/* media query for screens above 1025 */
     @media screen and (min-width: 1025px){
+        /* font size changes */
         .project-title{
             font-size: 35px;
         }

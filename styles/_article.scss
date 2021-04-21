@@ -1,27 +1,28 @@
+/* font stacks */
 $sans-serif: 'Roboto', sans-serif;
 $bold-title: bold 40px 'Roboto', sans-serif;
 $lean-title: normal 40px 'Roboto', sans-serif;
+/* color themes */
 $maincolor:#3C4A6D;
 $visited: #C7ECFF;
 $hovercol:#283c66;
+/* box shadow property */
 $b-shadow: 0px 4px 4px 0px rgba(1, 109, 209, 0.25);
+/* most used margin */
 $margin: 30px;
 
+/* sets up border-box for all margins */
 * {
     box-sizing: border-box;
     margin: 0;
 }
 
-
-
-.article-container {
-    width:100%;
-}
+/* blog post banner */
 #blog-image{
     height: auto;
     width: 100%;
 }
-
+/* blog post image dimensions */
 #article-img{
     width: 70%;
     height:auto;
@@ -30,15 +31,20 @@ $margin: 30px;
     margin-right: auto;
 }
 
+/* blog post page container  */
 .blog-article-container {
     margin: 30px;
     display: flex column; 
 }
-
+/* blog article container width */
+.article-container {
+    width:100%;
+}
+/* blog banner and share margins */
 .blog-header, .share-bar{
     margin: 20px 0px;
 }
-
+/* share icons flex and text styling */
 .share-bar {
     display: flex;
     p {
@@ -46,18 +52,18 @@ $margin: 30px;
         font-weight: bold;
     }
 }
-
+/* share icon dimensions and styling */
 .shareicon {
     margin-left: 10px;
     margin-right: 20px;
     font-size: 30px;
     color: $maincolor;
 }
-
+/* blog post margins */
 .post-title, #blog-date, .article-content{
     margin: 20px 0px;
 }
-
+/* divider line styling */
 .divider {
     display: flex;
     flex-direction: column;
@@ -71,14 +77,14 @@ $margin: 30px;
             opacity: (50%);
         }
 }
-
+/* previous posts flex and text alignment */
 .previous-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
+/* media query for screen width between 1200-1800 */
 @media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1800px) 

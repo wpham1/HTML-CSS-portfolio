@@ -1,18 +1,25 @@
 /* import partials */
 /* font stacks */
+/* color themes */
+/* box shadow property */
+/* most used margin */
+/* set labels to bold */
 label {
   font-weight: bold;
 }
 
+/* centers contact title */
 .contact-title {
   text-align: center;
   padding: 10px;
 }
 
+/* makes contact container a flex */
 .contact-flex {
   display: flex wrap;
 }
 
+/* applies margin flex and content alignment in form container */
 .form-container {
   margin-top: 20px;
   display: flex row;
@@ -21,6 +28,7 @@ label {
   justify-content: center;
 }
 
+/* centre contact detail info */
 .contact-details {
   display: flex;
   flex-direction: column;
@@ -29,10 +37,12 @@ label {
   width: 100%;
 }
 
+/* set font size to 15px */
 .contact-details > h2 {
   font-size: 15px;
 }
 
+/* sets font and form box sizes */
 input[type=text], input[type=email], select, textarea {
   width: 100%;
   padding: 12px;
@@ -41,15 +51,18 @@ input[type=text], input[type=email], select, textarea {
   margin-bottom: 10px;
 }
 
+/* sets message box to 200px */
 #message {
   height: 200px;
 }
 
+/* submit button style */
 input[type=submit] {
   height: 80px;
   font-size: 40px;
 }
 
+/* submit on hover has a pointer and fades a little */
 input[type=submit]:hover {
   filter: opacity(60%);
   cursor: pointer;
@@ -69,21 +82,29 @@ fieldset {
     height: 150px;
   }
 }
+/* media query for ipad  */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* message box scale */
   #message {
     height: 500px;
   }
 }
+/* media query for desktop and above */
 @media screen and (min-width: 1200px) {
+  /* removes padding to fit more form in */
   .contact-title {
     padding: 0px;
   }
 
+  /* message box scale to fit */
   #message {
     height: 80px;
   }
 }
 /* font stacks */
+/* color themes */
+/* box shadow property */
+/* most used margin */
 /* margin around Projects heading */
 .project-title {
   margin: 30px;
@@ -189,7 +210,9 @@ fieldset {
     text-align: center;
   }
 }
+/* media query for screens above 1025 */
 @media screen and (min-width: 1025px) {
+  /* font size changes */
   .project-title {
     font-size: 35px;
   }
@@ -219,10 +242,16 @@ fieldset {
     max-width: 50%;
   }
 }
+/* font stacks */
+/* color themes */
+/* box shadow property */
+/* most used margin */
+/* set top margin for blog banner */
 .header-container {
   margin: 0px 30px;
 }
 
+/* sets blog container dimensions and title color */
 .blog-header {
   position: relative;
   text-align: center;
@@ -231,6 +260,7 @@ fieldset {
   display: block;
   justify-content: center;
   align-items: center;
+  /* sets blog banner img dimensions */
 }
 
 .blog-image {
@@ -238,6 +268,7 @@ fieldset {
   max-width: 100%;
 }
 
+/* set blog text over banner colors and position */
 .centered-text {
   font: bold 40px "Roboto", sans-serif;
   position: absolute;
@@ -246,18 +277,21 @@ fieldset {
   transform: translate(-50%, -50%);
 }
 
+/* blog post grid container */
 .post-it-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+/* indivial post container dimensions */
 .post-it-container {
   flex: 0 1 150px;
   margin: 20px;
   width: 100%;
 }
 
+/* publish date stylings */
 .date-text {
   color: #3C4A6D;
   font-size: 12px;
@@ -265,6 +299,7 @@ fieldset {
   opacity: 70%;
 }
 
+/* post fonts sizing */
 #post-content {
   font-size: 10px;
 }
@@ -273,30 +308,35 @@ fieldset {
   font-size: 25px;
 }
 
+/* post image dimensions */
 .post-img {
   width: auto;
   height: 100px;
 }
 
+/* post see article text style */
 .post-see {
   font-weight: bold;
   font-size: 10px;
 }
 
+/* font stacks */
+/* color themes */
+/* box shadow property */
+/* most used margin */
+/* sets up border-box for all margins */
 * {
   box-sizing: border-box;
   margin: 0;
 }
 
-.article-container {
-  width: 100%;
-}
-
+/* blog post banner */
 #blog-image {
   height: auto;
   width: 100%;
 }
 
+/* blog post image dimensions */
 #article-img {
   width: 70%;
   height: auto;
@@ -305,15 +345,23 @@ fieldset {
   margin-right: auto;
 }
 
+/* blog post page container  */
 .blog-article-container {
   margin: 30px;
   display: flex column;
 }
 
+/* blog article container width */
+.article-container {
+  width: 100%;
+}
+
+/* blog banner and share margins */
 .blog-header, .share-bar {
   margin: 20px 0px;
 }
 
+/* share icons flex and text styling */
 .share-bar {
   display: flex;
 }
@@ -322,6 +370,7 @@ fieldset {
   font-weight: bold;
 }
 
+/* share icon dimensions and styling */
 .shareicon {
   margin-left: 10px;
   margin-right: 20px;
@@ -329,10 +378,12 @@ fieldset {
   color: #3C4A6D;
 }
 
+/* blog post margins */
 .post-title, #blog-date, .article-content {
   margin: 20px 0px;
 }
 
+/* divider line styling */
 .divider {
   display: flex;
   flex-direction: column;
@@ -347,6 +398,7 @@ fieldset {
   opacity: 50%;
 }
 
+/* previous posts flex and text alignment */
 .previous-container {
   display: flex;
   flex-direction: column;
@@ -354,6 +406,7 @@ fieldset {
   align-items: center;
 }
 
+/* media query for screen width between 1200-1800 */
 @media screen and (min-device-width: 1200px) and (max-device-width: 1800px) and (-webkit-min-device-pixel-ratio: 1) {
   .blog-article-container {
     margin: 0px 300px;
@@ -368,6 +421,9 @@ fieldset {
   }
 }
 /* font stacks */
+/* color themes */
+/* box shadow property */
+/* most used margin */
 /* sets true sizing for margins and padding */
 * {
   box-sizing: border-box;
@@ -469,6 +525,7 @@ h2 {
   animation: blink 1s ease-in-out 1s infinite alternate;
 }
 
+/* arrow animation */
 @keyframes blink {
   0% {
     opacity: 100%;
@@ -525,6 +582,7 @@ h2 {
   transition: transform 0.2s ease-in-out;
 }
 
+/* skill icon on hover */
 .skill-icon:hover {
   transform: scale(1.1);
 }
@@ -579,18 +637,21 @@ h2 {
   height: 100px;
 }
 
+/* project card background with scroll */
 #project {
   background: url("/images/sacwool2.png") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
 }
 
+/* blog card background with scroll */
 #blog {
   background: url("/images/games-source/RIGHT_TO_RULE/3.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
 }
 
+/* contact card background with scroll */
 #contact {
   background: url("/images/games-source/1BOX_1BUTTON/4.jpg") no-repeat center;
   background-size: cover;
@@ -598,21 +659,24 @@ h2 {
   filter: brightness(100%);
 }
 
-/* card effects */
+/* card hyperlink white no underline */
 .cards-button > h1 > a {
   text-decoration: none;
   color: #ffff;
 }
 
+/* makes visited text white no underline */
 .cards-button > h1 > a:visited {
   text-decoration: none;
   color: #ffff;
 }
 
+/* sets filter animation for cards and resume button*/
 .cards-button, .resume-button {
   transition: filter 0.2s ease-in-out;
 }
 
+/* filter animation */
 .cards-button:hover, .resume-button:hover {
   filter: opacity(60%);
 }
@@ -624,6 +688,7 @@ h2 {
   color: #ffff;
 }
 
+/* sets resume button visited link color */
 .resume-button > h1 > a:visited {
   color: #C7ECFF;
 }
@@ -635,6 +700,7 @@ h2 {
   margin: 40px;
 }
 
+/* social media icon dimensions and styling */
 .social-media-icons .fab {
   padding: 15px;
   font-size: 70px;
@@ -649,16 +715,20 @@ h2 {
   box-shadow: 0px 4px 4px 0px rgba(1, 109, 209, 0.25);
 }
 
+/* sets hover opacity animation on icon */
 .social-media-icons .fab:hover {
   opacity: 0.7;
 }
 
+/* changes social media icon color when visited */
 .social-media-icons .fab:visited {
   color: #C7ECFF;
 }
 
 /* media queries on bottom as it loads last */
+/* media screen query under 375 */
 @media screen and (max-width: 375px) {
+  /* font size changes */
   .titleleft > h1 {
     font-size: 40px;
   }
@@ -671,13 +741,9 @@ h2 {
     font-size: 15px;
   }
 }
-@media screen and (min-width: 375px) and (max-width: 375) {
-  .titleleft > h1, .titleright > h1 {
-    font-size: 1px;
-    color: red;
-  }
-}
+/* media screen query between 376 and 599 */
 @media screen and (min-width: 376px) and (max-width: 599px) {
+  /* font size changes */
   .titleleft > h1, .titleright > h1 {
     font-size: 50px;
   }
@@ -690,6 +756,7 @@ h2 {
     background-position-y: 0px;
   }
 
+  /* changes amount of skills that can fit in the row */
   .skill-grid > ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -699,6 +766,7 @@ h2 {
     padding-inline-start: 0px;
   }
 }
+/* media query for navbar */
 @media screen and (max-width: 600px) {
   .navbar a:not(:first-child) {
     display: none;
@@ -709,6 +777,7 @@ h2 {
     display: block;
   }
 }
+/* media query for screens under 600px navbar */
 @media screen and (max-width: 600px) {
   .navbar.responsive {
     position: relative;
@@ -726,7 +795,9 @@ h2 {
     text-align: left;
   }
 }
+/* media query for screens under 600px */
 @media screen and (max-width: 600px) {
+  /* change title page to column */
   .title-container {
     display: grid;
     grid-template-areas: "titleleft" "titleright" "titlebody";
@@ -753,7 +824,9 @@ h2 {
     text-align: center;
   }
 }
+/* media screen query for above 768px */
 @media screen and (min-width: 768px) {
+  /* font change */
   .titleleft, .titleright {
     font-size: 40px;
   }
@@ -771,6 +844,7 @@ h2 {
     background-position-y: -60px;
   }
 
+  /* change amount of skill icons fit in the row */
   .skill-grid > ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -780,6 +854,7 @@ h2 {
     padding-inline-start: 0px;
   }
 
+  /* scales skill icon */
   .skill-icon {
     width: 100px;
     height: 100px;
@@ -790,7 +865,9 @@ h2 {
     font-size: 25px;
   }
 }
+/* media screen query for above 1025px */
 @media screen and (min-width: 1025px) {
+  /* font size and arrow changes */
   .titleright > h1, .titleleft > h1 {
     font-size: 35px;
   }
@@ -803,16 +880,19 @@ h2 {
     font-size: 30px;
   }
 
+  /* changes amount of skill icons fit in a row */
   .skill-grid > ul {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 
+  /* scales up skill icons */
   .skill-icon {
     width: 150px;
     height: 150px;
     font-size: 120px;
   }
 }
+/* screens above 1281px has font changed to fit */
 @media screen and (min-width: 1281px) {
   .titleleft, .titleright {
     font-size: 40px;
